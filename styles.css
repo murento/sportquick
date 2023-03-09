@@ -244,22 +244,28 @@ main {
   }
   }
   
-  @media screen and (max-width: 600px) {
-  .featured h1 {
-  font-size: 1.5rem;
+ /* Default styles for desktop devices */
+body {
+  width: 1075px;
+  height: 570px;
+  margin: 0 auto;
+}
+
+/* Media queries for tablet devices */
+@media only screen and (max-width: 768px) {
+  body {
+    width: 90%;
+    height: auto;
   }
-  
-  .featured p {
-  font-size: 0.8rem;
+}
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 480px) {
+  body {
+    width: 100%;
+    height: auto;
   }
-  
-  .latest h2 {
-  font-size: 1.2rem;
-  }
-  
-  .latest li a {
-  font-size: 0.8rem;
-  }
+}
   }
   
  
