@@ -1,0 +1,266 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+ 
+  background-image: url("https://www.football24-7.org/wp-content/uploads/2021/06/football-ground.jpg");
+}
+
+
+
+/* Drop Down */
+.dropdown {
+  position: relative;
+}
+
+.dropdown > ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #45e269;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover > ul {
+  display: block;
+
+}
+
+.dropdown > a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  width: -10px;
+  color: #fff
+}
+
+.dropdown > ul > li > a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #000000;
+  text-decoration: none;
+}
+
+.dropdown > ul > li > a:hover {
+  background-color: #f1f1f1;
+}
+
+
+/* Basic styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  width: -10px;
+  color: #fff;
+  text-decoration: none;
+ 
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+  /* Style for the main section */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+
+/* Style for the featured section */
+.featured {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 300px 0 300px;
+}
+
+
+.featured h1 {
+  font-size: 2rem;
+  border: solid 5px red;
+  background-color: #45e269;
+  border-radius: 50px;
+  color:yellow;
+  
+}
+
+.featured img {
+  max-width: 600%;
+  height: auto;
+  border: solid 10px red;
+  border-radius: 50px;
+  margin: 1rem 
+  
+}
+.featured p{
+  color: aliceblue;
+  width: bold;
+  font-size: 20px;
+}
+
+/* Style for the latest section */
+
+.latest {
+  margin-top: 30px;
+  text-align: center;
+  
+  
+  }
+  
+  .latest h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border: solid red;
+  text-align: center;
+  background-color: royalblue;
+  margin-right: 300px;
+  margin-left: 300px;
+  border-radius: 150px;
+  }
+  
+  .latest ul {
+  list-style: none;
+  }
+  
+  .latest li {
+  margin-bottom: 0.5rem;
+  }
+  
+  .latest li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  }
+
+.latest {
+  margin-top: 30px;
+}
+
+.latest select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* SLIDE SHOW */
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: block;
+}
+
+.mySlides img {
+  width: 80px;
+  height: 160px;
+}
+
+/* Style for the dot indicators */
+.dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Style for two images to sit side by side with a curvy border */
+.mySlides img,
+.side-by-side {
+  border-radius: 20px;
+}
+
+.side-by-side {
+  display: inline-block;
+  width: 48%;
+  margin: 0 1%;
+}
+
+@media (max-width: 768px) {
+  .side-by-side {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+
+  /* Footer styles*/
+  footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 310px;
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+  nav ul {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+  
+  nav ul li {
+  margin-bottom: 0.5rem;
+  }
+  }
+  
+  @media screen and (max-width: 600px) {
+  .featured h1 {
+  font-size: 1.5rem;
+  }
+  
+  .featured p {
+  font-size: 0.8rem;
+  }
+  
+  .latest h2 {
+  font-size: 1.2rem;
+  }
+  
+  .latest li a {
+  font-size: 0.8rem;
+  }
+  }
+  
+ 
+ 
