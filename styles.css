@@ -215,7 +215,7 @@ main {
   margin: 0 1%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .side-by-side {
     width: 100%;
     margin: 10px 0;
